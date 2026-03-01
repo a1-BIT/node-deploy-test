@@ -23,7 +23,7 @@ app.get("/Millions", (req, res) => {
 })
 
 app.get("billions", (req, res) => {
-    res.json({ message: "Billions Page", status: 200 })
+    res.json({ message: "Billions Pager", status: 200 })
 })
 
 app.use((req, res) => {
