@@ -18,6 +18,10 @@ app.get("/products", (req, res) => {
     res.json({ message: "Products Page", status: 200 });
 });
 
+app.get("/Millions", (req, res) => {
+    res.json({ message: "Millions Page", status: 200 })
+})
+
 app.use((req, res) => {
     res.status(404).json({ message: "Page Not Found", status: 404 });
 });
