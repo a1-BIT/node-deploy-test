@@ -19,7 +19,7 @@ app.get("/products", (req, res) => {
 });
 
 app.get("/Millions", (req, res) => {
-    res.json({ message: "Millions Page", status: 200 })
+    res.json({ message: "Millions Pager", status: 200 })
 })
 
 app.get("billions", (req, res) => {
