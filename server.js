@@ -22,6 +22,10 @@ app.get("/Millions", (req, res) => {
     res.json({ message: "Millions Page", status: 200 })
 })
 
+app.get("billions", (req, res) => {
+    res.json({ message: "Billions Page", status: 200 })
+})
+
 app.use((req, res) => {
     res.status(404).json({ message: "Page Not Found", status: 404 });
 });
