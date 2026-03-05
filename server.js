@@ -2,6 +2,16 @@ import express from "express";
 
 const app = express();
 
+
+app.get("/get-environment", (req, res) => {
+
+    if (process.env.NODE_ENV == 'development') {
+        res.json({ environment: process.env.NODE_ENV, flag: "DEV" });
+    } else {
+        res.json({ environment: process.env.NODE_ENV, flag: "PROD" });
+    }
+})
+
 app.get("/", (req, res) => {
     res.json({ message: "Hello World! Lets Live for Earth (Planetary Health)", status: 200 });
 });
